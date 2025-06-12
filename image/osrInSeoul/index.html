@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSR in Seoul</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #aaff00;
+      color: #000;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .header {
+      background-color: #aaff00;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      padding: 40px 20px 0;
+    }
+    .header-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .header-left img {
+      width: 33vw;
+      max-width: 100%;
+      margin-bottom: 10vh;
+    }
+    .header-right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    .character-img {
+      width: 40vw;
+      max-width: 100%;
+      position: relative;
+      top: 100px;
+      z-index: 2;
+    }
+    .button {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 30%;
+    }
+    .highlight {
+      background: white;
+      margin-top: -30vh;
+      padding: 5% 30%;
+      position: relative;
+      z-index: 5;
+    }
+    .highlight h2 {
+      font-size: 1.8em;
+    }
+    .artists {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      justify-items: center;
+      align-items: center;
+      padding-top: 40px;
+    }
+    .artist-block {
+      text-align: center;
+    }
+    .artist-name {
+      font-size: 2.2em;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .artist-block img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .footer {
+      background: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    .reservation {
+      background: black;
+      color: white;
+      padding: 10px 30px;
+      border-radius: 30px;
+      margin-top: 20px;
+      display: inline-block;
+    }
+    .decoration1 {
+      position: absolute;
+      width: 15vw;
+      height: auto;
+      z-index: 0;
+    }
+    .decoration2 {
+      position: absolute;
+      width: 5vw;
+      height: auto;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section header">
+    <div class="header-left">
+      <img src="osr1.png" alt="OSR in Seoul">
+      <button class="button" style="font-size: 24px;">예약 / 予約</button>
+    </div>
+    <div class="header-right">
+      <img src="character.png" alt="character" class="character-img">
+    </div>
+    <img src="parts2.png" class="decoration1" alt="decor" style="top: -5vw;
+      left: -6vw;">
+    <img src="parts4.png" class="decoration2" alt="decor" style="top: 10%;">
+    <img src="parts5.png" class="decoration1" alt="decor" style="top: -5vw; right: 0vw; width: 20%;">
+     <img src="parts4.png" class="decoration2" alt="decor" style="bottom: 25%; left: 5vw;">
+  </div>
+
+  <div class="section highlight">
+    <h1>WHAT IS OSR?</h1>
+    <span>
+      일본을 기반으로 활동하는 멀티 장르 크리에이터 그룹, "Osiribeat"의 약칭으로 <br>
+      앨범뿐만 아닌 이번 한국에서 개최하는 이벤트의 타이틀로 사용하게 되었습니다  <br>
+      Oshiribeat는 일본을 기반으로 활동하는 크리에이터 그룹이지만 소속되어 있는 멤버들의 국적은 다양합니다. <br>
+      다양한 기반을 가지고 있기에 한국이나 중국의 회사 등 다양한 곳과 콜라보를 실시, 글로벌한 활동을 이어나가고 있습니다. <br> 
+      이번 서울에서 Oshiribeat의 첫번째 내한 행사를 개최하게 되어 기쁘게 생각합니다. <br>
+      한국에서 활발히 활동하고 있는 게스트 분들의 공연도 기대해 주세요.
+    </span>
+  </div>
+
+  <div class="section">
+    <img src="day.png" alt="" style="position:relative; width: 70vw; left: 12vw;">
+
+    <div class="artists">
+      <div class="artist-block">
+        <div class="artist-name">A-byss</div>  
+        <img src="roy.png" alt="CHUYO">
+        <div class="artist-name">CHUYO</div>
+        <img src="roy.png" alt="CHUYO">
+      </div>
+      <div class="artist-block">
+        <div class="artist-name">Roy Mikelate</div>
+        <img src="roy.png" alt="Roy">
+      </div>
+      <div class="artist-block">
+        <div class="artist-name">SANY-ON</div>
+        <img src="roy.png" alt="SANY-ON">
+      </div>
+      <div class="artist-block">
+        <img src="roy.png" alt="TAK">
+        <div class="artist-name">TAK</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="#" class="reservation">예약은 이쪽에서 &gt;</a>
+    <p style="margin-top: 10px; font-size: 0.8em;">注意事項記入欄</p>
+    <p>Oshiribeat</p>
+  </div>
+
+</body>
+</html>
