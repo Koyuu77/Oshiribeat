@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <title>osrEventInKR</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: "Istok Web", sans-serif;
       background: #aaff00;
       color: #000;
     }
     .section {
-      padding: 40px 20px;
+      /* padding: 40px 20px; */
       text-align: center;
       position: relative;
     }
@@ -23,7 +26,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: row;
-      padding: 40px 20px 0;
+      padding: 2.083vw 1.042vw 0;
     }
     .header-left {
       flex: 1;
@@ -47,61 +50,72 @@
       width: 40vw;
       max-width: 100%;
       position: relative;
-      top: 100px;
+      top: 5.208vw;
       z-index: 2;
     }
     .button {
       background-color: black;
       color: white;
-      padding: 10px 20px;
+      padding: 0.521vw 1.042vw;
       border: none;
-      border-radius: 20px;
-      font-weight: bold;
+      border-radius: 1.042vw;
+      font-weight: bolder;
+      font-size: 1vw;
       cursor: pointer;
       width: 30%;
     }
     .highlight {
-      background: white;
-      margin-top: -30vh;
-      padding: 5% 30%;
+      background: #e8e8e8;
+      margin-top: -15vh;
+      margin-bottom : 10vh;
+      padding: 5vh 0;
       position: relative;
       z-index: 5;
+      width: 100%;
     }
-    .highlight h2 {
-      font-size: 1.8em;
+    .highlight h1 {
+      font-size: 4vw;
+      font-weight: bolder;
+    }
+    .highlight span{
+      display: inline-block;
+      font: 1vw bolder;
+      font-family: "Istok Web", sans-serif;
+      /* line-height: 13px; */
     }
     .artists {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 40px;
+      gap: 2.083vw;
       justify-items: center;
       align-items: center;
-      padding-top: 40px;
+      padding-top: 2.083vw;
     }
     .artist-block {
       text-align: center;
     }
     .artist-name {
-      font-size: 2.2em;
+      font-size: 5.208vw;
       font-weight: bold;
-      margin: 10px 0;
+      margin: 0.521vw 0;
     }
     .artist-block img {
-      width: 200px;
+      object-fit: cover;
+      width: 40vw;
       height: auto;
-      border-radius: 10px;
+      border-radius: 0.521vw;
     }
     .footer {
       background: #eee;
-      padding: 20px;
-      font-size: 0.9em;
+      padding: 1.042vw;
+      font-size: 1.042vw;
     }
     .reservation {
       background: black;
       color: white;
-      padding: 10px 30px;
-      border-radius: 30px;
-      margin-top: 20px;
+      padding: 0.521vw 1.563vw;
+      border-radius: 1.563vw;
+      margin-top: 1.042vw;
       display: inline-block;
     }
     .decoration1 {
@@ -123,7 +137,7 @@
   <div class="section header">
     <div class="header-left">
       <img src="image/osrInSeoul/osr1.png" alt="OSR in Seoul">
-      <button class="button" style="font-size: 24px;">예약 / 予約</button>
+      <button class="button">예약 / 予約</button>
     </div>
     <div class="header-right">
       <img src="image/osrInSeoul/character.png" alt="character" class="character-img">
@@ -138,12 +152,16 @@
   <div class="section highlight">
     <h1>WHAT IS OSR?</h1>
     <span>
-      일본을 기반으로 활동하는 멀티 장르 크리에이터 그룹, "Osiribeat"의 약칭으로 <br>
-      앨범뿐만 아닌 이번 한국에서 개최하는 이벤트의 타이틀로 사용하게 되었습니다  <br>
-      Oshiribeat는 일본을 기반으로 활동하는 크리에이터 그룹이지만 소속되어 있는 멤버들의 국적은 다양합니다. <br>
-      다양한 기반을 가지고 있기에 한국이나 중국의 회사 등 다양한 곳과 콜라보를 실시, 글로벌한 활동을 이어나가고 있습니다. <br> 
-      이번 서울에서 Oshiribeat의 첫번째 내한 행사를 개최하게 되어 기쁘게 생각합니다. <br>
-      한국에서 활발히 활동하고 있는 게스트 분들의 공연도 기대해 주세요.
+    일본을 기반으로 다방면으로 활동 중인 Oshiribest가 한국에 찾아옵니다.<br><br>
+
+    "OSR"은 읿본을 기반으로 활동하는 멀티 장르 크리에이터 그룹, "Oshirbeat"의 약자입니다.<br>
+    일본 기반의 그룹이지만 소속되어 있는 멤버들의 국적은 다양합니다.<br>
+    다양한 기반을 가지고 있기에 한국이나 중국의 회사 등 다양한 곳과 콜라보를 실시, 글로벌한 활동을 이어나가고 있습니다.<br><br>
+
+    Norts, K-forest, A-byss, uta 등 일본 씬에서 리듬게임, 클럽 DJ 등 활발하게 활동하고 있는 멤버들의 첫 내한에 맞춰<br>
+    서울에서 Oshiribeat의 첫번째 내한 행사를 개최하게 되어 기쁘게 생각합니다.<br>
+    한국에서 활발히 활동하고 있는 CHUYO, Roy Mikelate 등 한국 멤버들 및 스페셜 게스트 분들의 공연도 기대해 주세요. <br>
+
     </span>
   </div>
 
@@ -153,28 +171,34 @@
     <div class="artists">
       <div class="artist-block">
         <div class="artist-name">A-byss</div>  
-        <img src="image/osrInSeoul/roy.png" alt="CHUYO">
+        <img src="image/osrInSeoul/abyss.png" alt="CHUYO">
         <div class="artist-name">CHUYO</div>
-        <img src="image/osrInSeoul/roy.png" alt="CHUYO">
+        <img src="image/osrInSeoul/chuyo.png" alt="CHUYO">
       </div>
       <div class="artist-block">
+        <div class="artist-name">K-forest</div>
+        <img src="image/osrInSeoul/kforest.png" alt="Roy">
+        <div class="artist-name">NeLime</div>
+        <img src="image/osrInSeoul/nelime.png" alt="Roy">
+      </div>
+      <div class="artist-block">
+        <div class="artist-name">Norts</div>
+        <img src="image/osrInSeoul/kforest.png" alt="Roy">
         <div class="artist-name">Roy Mikelate</div>
         <img src="image/osrInSeoul/roy.png" alt="Roy">
       </div>
       <div class="artist-block">
         <div class="artist-name">SANY-ON</div>
-        <img src="image/osrInSeoul/roy.png" alt="SANY-ON">
-      </div>
-      <div class="artist-block">
-        <img src="image/osrInSeoul/roy.png" alt="TAK">
+        <img src="image/osrInSeoul/sanyon.png" alt="SANY-ON">
         <div class="artist-name">TAK</div>
+        <img src="image/osrInSeoul/tak.png" alt="TAK">
       </div>
     </div>
   </div>
 
   <div class="footer">
     <a href="#" class="reservation">예약은 이쪽에서 &gt;</a>
-    <p style="margin-top: 10px; font-size: 0.8em;">注意事項記入欄</p>
+    <p style="margin-top: 0.521vw; font-size: 0.8em;">注意事項記入欄</p>
     <p>Oshiribeat</p>
   </div>
 
