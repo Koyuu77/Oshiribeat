@@ -84,16 +84,44 @@
       /* line-height: 13px; */
     }
     .artists {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2.083vw;
-      justify-items: center;
-      align-items: center;
+      width: 85%;
       padding-top: 2.083vw;
+      margin: 0 auto;
     }
-    .artist-block {
-      text-align: center;
+
+    .artists img{
+      display: block;
     }
+
+    .artist-block{
+      position: relative;
+      overflow:auto; 
+      margin: 15vh 0;
+    }
+
+    div[class="align-left"]{
+      float: left;
+      font: 10vw bolder;
+      font-family: "Istok Web", sans-serif;
+      z-index: 5;
+    }
+    div[class="align-right"]{
+      
+      float : right;
+      font: 10vw bolder;
+      font-family: "Istok Web", sans-serif;
+      z-index: 5;
+      text-align: start;
+    }
+
+    img[class="align-left"]{
+      float: left;
+    }
+    img[class="align-right"]{
+      float: right;
+      /* align-self: right; */
+    }
+
     .artist-name {
       font-size: 5.208vw;
       font-weight: bold;
@@ -154,7 +182,7 @@
     <span>
     일본을 기반으로 다방면으로 활동 중인 Oshiribest가 한국에 찾아옵니다.<br><br>
 
-    "OSR"은 읿본을 기반으로 활동하는 멀티 장르 크리에이터 그룹, "Oshirbeat"의 약자입니다.<br>
+    "OSR"은 일본을 기반으로 활동하는 멀티 장르 크리에이터 그룹, "Oshirbeat"의 약자입니다.<br>
     일본 기반의 그룹이지만 소속되어 있는 멤버들의 국적은 다양합니다.<br>
     다양한 기반을 가지고 있기에 한국이나 중국의 회사 등 다양한 곳과 콜라보를 실시, 글로벌한 활동을 이어나가고 있습니다.<br><br>
 
@@ -170,28 +198,43 @@
 
     <div class="artists">
       <div class="artist-block">
-        <div class="artist-name">A-byss</div>  
-        <img src="image/osrInSeoul/abyss.png" alt="CHUYO">
-        <div class="artist-name">CHUYO</div>
-        <img src="image/osrInSeoul/chuyo.png" alt="CHUYO">
+        <div class="align-left" style="margin-left: 10vw;">A-byss</div>
+        <img src="image/osrInSeoul/abyss.png" alt="A-byss" class="align-right">
       </div>
+      
       <div class="artist-block">
-        <div class="artist-name">K-forest</div>
-        <img src="image/osrInSeoul/kforest.png" alt="Roy">
-        <div class="artist-name">NeLime</div>
-        <img src="image/osrInSeoul/nelime.png" alt="Roy">
+        <img src="image/osrInSeoul/chuyo.png" alt="CHUYO" class="align-left">
+        <div class="align-right" style="margin-right: 5vw;">CHUYO</div>
       </div>
+      
       <div class="artist-block">
-        <div class="artist-name">Norts</div>
-        <img src="image/osrInSeoul/kforest.png" alt="Roy">
-        <div class="artist-name">Roy Mikelate</div>
-        <img src="image/osrInSeoul/roy.png" alt="Roy">
+        <div class="align-left" style="margin-left: 4vw;">K-forest</div>
+        <img src="image/osrInSeoul/kforest.png" alt="K-forest" class="align-right">
       </div>
+      
       <div class="artist-block">
-        <div class="artist-name">SANY-ON</div>
-        <img src="image/osrInSeoul/sanyon.png" alt="SANY-ON">
-        <div class="artist-name">TAK</div>
-        <img src="image/osrInSeoul/tak.png" alt="TAK">
+        <img src="image/osrInSeoul/nelime.png" alt="NeLime" class="align-left">
+        <div class="align-right" style="margin-right:6vw;">NeLime</div>
+      </div>
+      
+      <div class="artist-block">
+        <div class="align-left" style="margin-left: 15vw;">Norts</div>
+        <img src="image/osrInSeoul/kforest.png" alt="Norts" class="align-right">
+      </div>
+      
+      <div class="artist-block">
+        <img src="image/osrInSeoul/roy.png" alt="Roy" class="align-left">
+        <div class="align-right" style="margin-right: 4vw;">Roy<br>Mikelate</div>
+      </div>
+      
+      <div class="artist-block">
+        <div class="align-left" style="margin-right: 1vw;">SANY-ON</div>
+        <img src="image/osrInSeoul/sanyon.png" alt="SANY-ON" class="align-right">
+      </div>
+      
+      <div class="artist-block">
+        <img src="image/osrInSeoul/tak.png" alt="TAK" class="align-left">
+        <div class="align-right" style="margin-right: 22vw;">TAK</div>
       </div>
     </div>
   </div>
