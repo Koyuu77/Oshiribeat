@@ -86,7 +86,7 @@
     }
     .artists {
       position: relative;
-      width: 85%;
+      width: 70%;
       padding-top: 2.083vw;
       margin: 0 auto;
       
@@ -97,25 +97,25 @@
     }
 
     .artist-block{
-      position: relative;
-      overflow:auto; 
+      position:relative;
+      overflow:hidden; 
       margin: 15vh 0;
       z-index: 1;
     }
 
+    .artist-block > div > img{
+      height: 8vh;
+      object-fit: contain;
+      overflow: hidden;
+    }
+
     div[class="align-left"]{
       float: left;
-      font: 10vw bolder;
-      font-family: "Istok Web", sans-serif;
       z-index: 5;
     }
     div[class="align-right"]{
-      
       float : right;
-      font: 10vw bolder;
-      font-family: "Istok Web", sans-serif;
       z-index: 5;
-      text-align: start;
     }
 
     img[class="align-left"]{
@@ -133,7 +133,7 @@
     }
     .artist-block img {
       object-fit: cover;
-      width: 40vw;
+      width: 29vw;
       height: auto;
       border-radius: 0.521vw;
     }
@@ -211,20 +211,25 @@
       right: 5vw;width: 5%;z-index: 6;">
   </div>
 
-  <div class="section">
-    <img src="image/osrInSeoul/day.png" alt="" style="position:relative; width: 70vw; left: 12vw;">
+  <div class="section" style="overflow: hidden;">
+    <img src="image/osrInSeoul/day_new.png" alt="" style="position:relative; width: 70vw; left: 6vw;">
 
-    <div class="artists">
+    <div class="artists" style="overflow: hidden;">
       <div class="artist-block">
-        <div class="align-left" style="margin-left: 10vw;">A-byss</div>
+        <div class="align-left" style="margin-left: 3vw;">
+          <img src="image/osrInSeoul/names/abyss.png" alt="abyss_name" style="height: 8vh;">
+        </div>
         <img src="image/osrInSeoul/abyss.png" alt="A-byss" class="align-right">
       </div>
 
       <div class="artist-block">
         <img src="image/osrInSeoul/chuyo.png" alt="CHUYO" class="align-left">
-        <div class="align-right" style="margin-right: 5vw;">CHUYO</div>
+        <div class="align-right" style="margin-right: 3vw;">
+          <img src="image/osrInSeoul/names/chuyo.png" alt="chuyo_name" style="height: 8vh;">
+        </div>
       </div>
-      
+     
+      <!--
       <img src="image/osrInSeoul/parts5.png" class="decoration1" alt="decor" style="top: 70vh;
       left: -8vw; transform: rotate(180deg); width: 25%; height: 10%; z-index: 0;">
 
@@ -238,46 +243,76 @@
       right: 5vw; width: 8%;">
 
       <img src="image/osrInSeoul/parts2.png" class="decoration1" alt="decor" style="top: 410vh;
-      right: -15vw; width: 30%;">
+      right: 0vw; width: 30%;">
 
       <img src="image/osrInSeoul/parts2.png" class="decoration1" alt="decor" style="top: 610vh;
-      left: 10vw; width: 20%;">
+      left: 0vw; width: 20%;">-->
 
       <div class="artist-block">
-        <div class="align-left" style="margin-left: 4vw;">K-forest</div>
+        <div class="align-left" style="margin-left: 3vw;">
+          <img src="image/osrInSeoul/names/kforeat.png" alt="kforest_name" style="height: 8vh;"> 
+        </div>
         <img src="image/osrInSeoul/kforest.png" alt="K-forest" class="align-right">
       </div>
       
       <div class="artist-block">
         <img src="image/osrInSeoul/nelime.png" alt="NeLime" class="align-left">
-        <div class="align-right" style="margin-right:6vw;">NeLime</div>
+        <div class="align-right" style="margin-right: 3vw;"><img src="image/osrInSeoul/names/nelime.png" alt="nelime_name"></div>
       </div>
       
       <div class="artist-block">
-        <div class="align-left" style="margin-left: 15vw;">Norts</div>
-        <img src="image/osrInSeoul/kforest.png" alt="Norts" class="align-right">
+        <div class="align-left" style="margin-left: 3vw;">
+          <img src="image/osrInSeoul/names/Norts.png" alt="norts_name">
+        </div>
+        <img src="image/osrInSeoul/norts.png" alt="Norts" class="align-right">
       </div>
       
       <div class="artist-block">
         <img src="image/osrInSeoul/roy.png" alt="Roy" class="align-left">
-        <div class="align-right" style="margin-right: 4vw;">Roy<br>Mikelate</div>
+        <div class="align-right" style="margin-right: 3vw;"><img src="image/osrInSeoul/names/roy.png" alt="roy_name" style="height: 8vh;"></div>
       </div>
       
       <div class="artist-block">
-        <div class="align-left" style="margin-right: 1vw;">SANY-ON</div>
+        <div class="align-left" style="margin-right: 2vw;">
+          <img src="image/osrInSeoul/names/sanyon.png" alt="sanyon_name" style="height: 8vh;">
+        </div>
         <img src="image/osrInSeoul/sanyon.png" alt="SANY-ON" class="align-right">
       </div>
       
       <div class="artist-block">
-        <img src="image/osrInSeoul/tak.png" alt="TAK" class="align-left">
-        <div class="align-right" style="margin-right: 22vw;">TAK</div>
+        <img src="image/osrInSeoul/tak.png" alt="TAK" class="align-left" >
+        <div class="align-right" style="margin-right: 2vw;">
+          <img src="image/osrInSeoul/names/tak.png" alt="tak_name" style="height: 8vh;">
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="footer">
-    <a href="#" class="reservation">예약은 이쪽에서 &gt;</a>
-    <p style="margin-top: 2vh; font-size: 0.8em;">注意事項記入欄</p>
+  <div class="footer" style="width: 100%; padding: 0;">
+    <div style="width: 33%; margin: 0 auto;">
+      <a href="#" class="reservation">예약은 이쪽에서 &gt;</a>
+      <p style="margin-top: 2vh; font-size: 0.8em; text-align: center;">주의사항</p>
+      <p style="margin-top: 2vh; font-size: 0.5em; text-align: start;">
+        *사전 예약 인원이 공연장의 수용 인원을 초과할 경우, 안전을 위해 예매 제한 및 현장 판매가 제한될 수도 있습니다.이 점 양해 부탁드립니다.<br><br>
+
+        안내 및 주의사항.<br>
+        > 본 행사는 만 12세 이상 관람 가능합니다. 신분증을 반드시 지참해 주세요.<br>
+        > 주차 공간이 별도로 마련되어 있지 않으므로 되도록 대중교통을 이용해주시기 바랍니다.<br>
+        > 행사장에는 외부음식 반입을 금지합니다.<br>
+        > 별도의 짐 보관 장소는 마련되어 있지 않습니다. 되도록 가볍게 방문해주세요.<br>
+        > 관객 부주의로 인한, 부상, 분실, 도난 등의 피해는 주최에서 책임지지 않습니다.<br>
+        > 음주, 고성방가 등 다른 관객 및 공연에 피해를 줄 만한 행동을 삼가 부탁드립니다.<br><br>
+
+        *예매자 한정, 한국 공연을 위해 특별 제작된 스티커가 1매씩 증정됩니다.<br><br>
+
+        사전 예약은 행사 전날, 2025년 8월 9일 23시 59분에 마감됩니다.<br>
+        사전 예약 후 작성해주신 이메일로 입금 확인 메일을 보내드립니다, 입금 확인은 하루에 1번 진행합니다.<br>
+        사전 예약을 신청하신 후 3일 이내에 입금확인이 되지 않을 시, 예매는 통보 없이 자동 취소되며 개인정보는 즉시 파기합니다.<br>
+        사전 예약 시 사용된 개인정보는 행사 종료 후 일괄 파기합니다.<br><br>
+
+        개인정보 관리자: Numao Yuto (E-Mail: Oshiribeat@gmail.com)
+      </p>
+    </div>
     <hr>
     <img src="image/osrInSeoul/osrLogo_Black.png" style="margin: 1vh 0; width: 10%;">
   </div>
