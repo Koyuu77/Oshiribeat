@@ -84,58 +84,40 @@
       font-family: "Istok Web", sans-serif;
       /* line-height: 13px; */
     }
-    .artists {
+    .section {
+      text-align: center;
       position: relative;
-      width: 70%;
-      padding-top: 2.083vw;
-      margin: 0 auto;
-      
-    }
-
-    .artists img{
-      display: block;
-    }
-
-    .artist-block{
-      position:relative;
-      overflow:hidden; 
-      margin: 15vh 0;
-      z-index: 1;
-    }
-
-    .artist-block > div > img{
-      height: 8vh;
-      object-fit: contain;
       overflow: hidden;
     }
-
-    div[class="align-left"]{
-      float: left;
-      z-index: 5;
+    .artist-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, auto);
+      gap: 2vw;
+      padding: 5vw;
+      width: 60vw;
+      margin: 0 auto;
     }
-    div[class="align-right"]{
-      float : right;
-      z-index: 5;
+    .artist-profile, .artist-logo {
+      width: 100%;
+      aspect-ratio: 1 / 1;
     }
-
-    img[class="align-left"]{
-      float: left;
-    }
-    img[class="align-right"]{
-      float: right;
-      /* align-self: right; */
-    }
-
-    .artist-name {
-      font-size: 5.208vw;
-      font-weight: bold;
-      margin: 0.521vw 0;
-    }
-    .artist-block img {
+    .artist-profile img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
-      width: 29vw;
-      height: auto;
-      border-radius: 0.521vw;
+      box-sizing: border-box;
+    }
+    .artist-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      box-sizing: border-box;
+    }
+    @media (max-width: 768px) {
+      .artist-grid {
+        grid-template-columns: 1fr;
+      }
     }
     .footer {
       background: #eee;
@@ -167,6 +149,9 @@
       height: auto;
       z-index: 0;
     }
+    
+
+        
   </style>
 </head>
 <body>
@@ -214,9 +199,30 @@
   <div class="section" style="overflow: hidden;">
     <img src="image/osrInSeoul/day_new.png" alt="" style="position:relative; width: 70vw; left: 6vw;">
 
-    <div class="artists" style="overflow: hidden;">
+    
+  <div class="section">
+    <div class="artist-grid">
+      <div class="artist-profile"><img src="image/osrInSeoul/abyss.png" alt="Artist 1"></div>
+      <div class="artist-logo"><img src="image/osrInSeoul/names/abyss_text.png" alt="Artist 1 Logo"></div>
+      <div class="artist-logo"><img src="image/osrInSeoul/names/chuyo_text.png" alt="Artist 2 Logo"></div>
+      <div class="artist-profile"><img src="image/osrInSeoul/chuyo.png" alt="Artist 2"></div>
+      <div class="artist-profile"><img src="image/osrInSeoul/kforest.png" alt="Artist 3"></div>
+      <div class="artist-logo"><img src="image/osrInSeoul/names/kforest_text.png" alt="Artist 3 Logo" style="margin-left: -6vw;"></div>
+      <div class="artist-logo"><img src="image/osrInSeoul/names/nelime_text.png" alt="Artist 4 Logo"></div>
+      <div class="artist-profile"><img src="image/osrInSeoul/nelime.png" alt="Artist 4"></div>
+
+      <div class="artist-profile"><img src="image/osrInSeoul/norts.png" alt="Artist 1"></div>
+      <div class="artist-logo"><img src="image/osrInSeoul/names/Norts_text.png" alt="Artist 1 Logo"></div>
+      <div class="artist-logo"><img src="image/osrInSeoul/names/roy_text.png" alt="Artist 2 Logo"></div>
+      <div class="artist-profile"><img src="image/osrInSeoul/roy.png" alt="Artist 2"></div>
+      <div class="artist-profile"><img src="image/osrInSeoul/tak.png" alt="Artist 3"></div>
+      <div class="artist-logo"><img src="image/osrInSeoul/names/tak_text.png" alt="Artist 3 Logo"></div>
+    </div>
+  </div>
+    
+    <!-- <div class="artists" style="overflow: hidden;">
       <div class="artist-block">
-        <div class="align-left" style="margin-left: 3vw;">
+        <div class="align-left" style="">
           <img src="image/osrInSeoul/names/abyss.png" alt="abyss_name" style="height: 8vh;">
         </div>
         <img src="image/osrInSeoul/abyss.png" alt="A-byss" class="align-right">
@@ -224,12 +230,12 @@
 
       <div class="artist-block">
         <img src="image/osrInSeoul/chuyo.png" alt="CHUYO" class="align-left">
-        <div class="align-right" style="margin-right: 3vw;">
+        <div class="align-right" style="">
           <img src="image/osrInSeoul/names/chuyo.png" alt="chuyo_name" style="height: 8vh;">
         </div>
       </div>
      
-      <!--
+      
       <img src="image/osrInSeoul/parts5.png" class="decoration1" alt="decor" style="top: 70vh;
       left: -8vw; transform: rotate(180deg); width: 25%; height: 10%; z-index: 0;">
 
@@ -246,10 +252,10 @@
       right: 0vw; width: 30%;">
 
       <img src="image/osrInSeoul/parts2.png" class="decoration1" alt="decor" style="top: 610vh;
-      left: 0vw; width: 20%;">-->
+      left: 0vw; width: 20%;">
 
       <div class="artist-block">
-        <div class="align-left" style="margin-left: 3vw;">
+        <div class="align-left" style="">
           <img src="image/osrInSeoul/names/kforeat.png" alt="kforest_name" style="height: 8vh;"> 
         </div>
         <img src="image/osrInSeoul/kforest.png" alt="K-forest" class="align-right">
@@ -261,7 +267,7 @@
       </div>
       
       <div class="artist-block">
-        <div class="align-left" style="margin-left: 3vw;">
+        <div class="align-left" style="">
           <img src="image/osrInSeoul/names/Norts.png" alt="norts_name">
         </div>
         <img src="image/osrInSeoul/norts.png" alt="Norts" class="align-right">
@@ -269,11 +275,11 @@
       
       <div class="artist-block">
         <img src="image/osrInSeoul/roy.png" alt="Roy" class="align-left">
-        <div class="align-right" style="margin-right: 3vw;"><img src="image/osrInSeoul/names/roy.png" alt="roy_name" style="height: 8vh;"></div>
+        <div class="align-right" style=""><img src="image/osrInSeoul/names/roy.png" alt="roy_name" style="height: 8vh;"></div>
       </div>
       
       <div class="artist-block">
-        <div class="align-left" style="margin-right: 2vw;">
+        <div class="align-left" style="">
           <img src="image/osrInSeoul/names/sanyon.png" alt="sanyon_name" style="height: 8vh;">
         </div>
         <img src="image/osrInSeoul/sanyon.png" alt="SANY-ON" class="align-right">
@@ -281,18 +287,17 @@
       
       <div class="artist-block">
         <img src="image/osrInSeoul/tak.png" alt="TAK" class="align-left" >
-        <div class="align-right" style="margin-right: 2vw;">
+        <div class="align-right" style="">
           <img src="image/osrInSeoul/names/tak.png" alt="tak_name" style="height: 8vh;">
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
-  <div class="footer" style="width: 100%; padding: 0;">
-    <div style="width: 33%; margin: 0 auto;">
-      <a href="#" class="reservation">예약은 이쪽에서 &gt;</a>
-      <p style="margin-top: 2vh; font-size: 0.7vw; text-align: center;">주의사항</p>
-      <p style="margin-top: 2vh; font-size: 0.7vw; text-align: start;">
+  <div class="footer" style="width: 100%; padding: 1vh 0;">
+    <div style="width: 66%; margin: 0 auto;">
+      <p style="margin-top: 2vh; font-size: 1vw; text-align: center;">주의사항</p>
+      <p style="margin-top: 2vh; font-size: 1vw; text-align: start;">
         *사전 예약 인원이 공연장의 수용 인원을 초과할 경우, 안전을 위해 예매 제한 및 현장 판매가 제한될 수도 있습니다.이 점 양해 부탁드립니다.<br><br>
 
         안내 및 주의사항.<br>
@@ -312,6 +317,7 @@
 
         개인정보 관리자: Numao Yuto (E-Mail: Oshiribeat@gmail.com)
       </p>
+      <a href="#" class="reservation">예약은 이쪽에서 &gt;</a>
     </div>
     <hr>
     <img src="image/osrInSeoul/osrLogo_Black.png" style="margin: 1vh 0; width: 10%;">
