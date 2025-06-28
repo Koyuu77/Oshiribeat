@@ -114,9 +114,106 @@
       object-fit: contain;
       box-sizing: border-box;
     }
+
+    @media (min-width: 769px)
+    { 
+
+      .button{
+        background-color: black;
+        color: white;
+        padding: 0.521vw 1.042vw;
+        border: none;
+        border-radius: 1.042vw;
+        font-weight: bolder;
+        font-size: 1vw;
+        cursor: pointer;
+        width: 30%;
+      }
+
+      .footer a{
+        background-color: black;
+        color: white;
+        padding: 0.521vw 1.042vw;
+        border: none;
+        border-radius: 1.042vw;
+        font-weight: bolder;
+        font-size: 1vw;
+        cursor: pointer;
+        width: 30%;
+      }
+
+      .c_text{
+        order:3;
+      }
+      .c_pic{
+        order:4;
+      }
+      .n_text{
+        order:7;
+      }
+      .n_pic{
+        order:8;
+      }
+      .r_text{
+        order:11;
+      }
+      .r_pic{
+        order:12;
+      }
+      .kforest{
+        margin-left: -7vw;
+      }
+
+    }
+
     @media (max-width: 768px) {
+
+      .button{
+        background-color: black;
+        color: white;
+        padding: 0.521vw 1.042vw;
+        border: none;
+        border-radius: 1.042vw;
+        font-weight: bolder;
+        font-size: 1.5vw;
+        cursor: pointer;
+        width: 50%;
+      }
+
+      .footer a{
+        background-color: black;
+        color: white;
+        padding: 0.521vw 1.042vw;
+        border: none;
+        border-radius: 1.042vw;
+        font-weight: bolder;
+        font-size: 1.4vw;
+        cursor: pointer;
+        width: 30%;
+      }
       .artist-grid {
         grid-template-columns: 1fr;
+      }
+      .c_text{
+        order:4;
+      }
+      .c_pic{
+        order:3;
+      }
+      .n_text{
+        order:8;
+      }
+      .n_pic{
+        order:7;
+      }
+      .r_text{
+        order:12;
+      }
+      .r_pic{
+        order:11;
+      }
+      .kforest{
+        margin-left: -7vw;
       }
     }
     .footer {
@@ -202,21 +299,26 @@
     
   <div class="section">
     <div class="artist-grid">
-      <div class="artist-profile"><img src="image/osrInSeoul/abyss.png" alt="Artist 1"></div>
-      <div class="artist-logo"><img src="image/osrInSeoul/names/abyss_text.png" alt="Artist 1 Logo"></div>
-      <div class="artist-logo"><img src="image/osrInSeoul/names/chuyo_text.png" alt="Artist 2 Logo"></div>
-      <div class="artist-profile"><img src="image/osrInSeoul/chuyo.png" alt="Artist 2"></div>
-      <div class="artist-profile"><img src="image/osrInSeoul/kforest.png" alt="Artist 3"></div>
-      <div class="artist-logo"><img src="image/osrInSeoul/names/kforest_text.png" alt="Artist 3 Logo" style="margin-left: -6vw;"></div>
-      <div class="artist-logo"><img src="image/osrInSeoul/names/nelime_text.png" alt="Artist 4 Logo"></div>
-      <div class="artist-profile"><img src="image/osrInSeoul/nelime.png" alt="Artist 4"></div>
+      <div class="artist-profile" style="order:1"><img src="image/osrInSeoul/abyss.png" alt="Abyss"></div>
+      <div class="artist-logo" style="order:2"><img src="image/osrInSeoul/names/abyss_text.png" alt="Abyss Logo"></div>
 
-      <div class="artist-profile"><img src="image/osrInSeoul/norts.png" alt="Artist 1"></div>
-      <div class="artist-logo"><img src="image/osrInSeoul/names/norts_text.png" alt="Artist 1 Logo"></div>
-      <div class="artist-logo"><img src="image/osrInSeoul/names/roy_text.png" alt="Artist 2 Logo"></div>
-      <div class="artist-profile"><img src="image/osrInSeoul/roy.png" alt="Artist 2"></div>
-      <div class="artist-profile"><img src="image/osrInSeoul/tak.png" alt="Artist 3"></div>
-      <div class="artist-logo"><img src="image/osrInSeoul/names/tak_text.png" alt="Artist 3 Logo"></div>
+      <div class="artist-logo c_text" ><img src="image/osrInSeoul/names/chuyo_text.png" alt="Chuyo Logo"></div>
+      <div class="artist-profile c_pic" ><img src="image/osrInSeoul/chuyo.png" alt="Chuyo"></div>
+
+      <div class="artist-profile" style="order:5"><img src="image/osrInSeoul/kforest.png" alt="K-forest"></div>
+      <div class="artist-logo kforest" style="order:6"><img src="image/osrInSeoul/names/kforest_text.png" alt="K-forest Logo" style=""></div>
+
+      <div class="artist-logo n_text" ><img src="image/osrInSeoul/names/nelime_text.png" alt="NeLime Logo"></div>
+      <div class="artist-profile n_pic" ><img src="image/osrInSeoul/nelime.png" alt="NeLime"></div>
+
+      <div class="artist-profile" style="order:9"><img src="image/osrInSeoul/norts.png" alt="Norts"></div>
+      <div class="artist-logo" style="order:10"><img src="image/osrInSeoul/names/norts_text.png" alt="Norts Logo"></div>
+
+      <div class="artist-logo r_text" ><img src="image/osrInSeoul/names/roy_text.png" alt="roy Logo"></div>
+      <div class="artist-profile r_pic" ><img src="image/osrInSeoul/roy.png" alt="roy"></div>
+      
+      <div class="artist-profile" style="order:13"><img src="image/osrInSeoul/tak.png" alt="tak"></div>
+      <div class="artist-logo" style="order:14"><img src="image/osrInSeoul/names/tak_text.png" alt="tak Logo"></div>
     </div>
   </div>
     
@@ -296,8 +398,8 @@
 
   <div class="footer" style="width: 100%; padding: 1vh 0;">
     <div style="width: 66%; margin: 0 auto;">
-      <p style="margin-top: 2vh; font-size: 1vw; text-align: center;">주의사항</p>
-      <p style="margin-top: 2vh; font-size: 1vw; text-align: start;">
+      <p style="margin-top: 2vh; font-weight: bold; font-size: 1vw; text-align: center;">주의사항</p>
+      <p style="margin-top: 2vh; font-weight: bold; font-size: 1vw; text-align: start;">
         *사전 예약 인원이 공연장의 수용 인원을 초과할 경우, 안전을 위해 예매 제한 및 현장 판매가 제한될 수도 있습니다.이 점 양해 부탁드립니다.<br><br>
 
         안내 및 주의사항.<br>
