@@ -45,11 +45,6 @@
       align-items: center;
       justify-content: center;
     }
-    .header-left img {
-      width: 33vw;
-      max-width: 100%;
-      margin-bottom: 2vh;
-    }
     .header-right {
       flex: 1;
       display: flex;
@@ -118,6 +113,13 @@
     /* pc 버전 */
     @media (min-width: 769px)
     { 
+      
+    .header-left img {
+      width: 33vw;
+      max-width: 100%;
+      margin-bottom: 10vh;
+    }
+
       .button{
         position: fixed;
         background-color: black;
@@ -130,7 +132,7 @@
         cursor: pointer;
         width: 30%;
         z-index: 8;
-        bottom: 8vh;
+        bottom: 7vh;
         left: 35vw;
       }
 
@@ -182,6 +184,13 @@
 
     /* 모바일 버전 */
     @media (max-width: 768px) {
+
+      
+    .header-left img {
+      width: 33vw;
+      max-width: 100%;
+      margin-bottom: 14vh;
+    }
 
       .highlight span{
         display: inline-block;
