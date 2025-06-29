@@ -3,9 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="image/osrInSeoul/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QW579NC73W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QW579NC73W');
+  </script> 
   <title>osrEventInKR</title>
   <style>
     body {
@@ -120,7 +130,7 @@
         cursor: pointer;
         width: 30%;
         z-index: 8;
-        bottom: 4vh;
+        bottom: 8vh;
         left: 35vw;
       }
 
@@ -163,7 +173,11 @@
       .kforest{
         margin-left: -3vw;
       }
-
+      .footer-logo{
+        margin: 1vh 0; 
+        padding: 2vh 0; 
+        width: 15%;
+      }
     }
 
     /* 모바일 버전 */
@@ -188,7 +202,7 @@
         cursor: pointer;
         width: 93%;
         z-index: 8;
-        bottom: 4vh;
+        bottom: 6vh;
         left: 3.5vw;
       }
 
@@ -264,8 +278,11 @@
       height: auto;
       z-index: 0;
     }
-    
-
+    .footer-logo{
+      margin: 1vh 0; 
+      padding: 2vh 0; 
+      width: 15%;
+    }
         
   </style>
 </head>
@@ -439,7 +456,7 @@
       </p>
     </div>
     <hr>
-    <img src="image/osrInSeoul/osrLogo_Black.png" style="margin: 2vh 0; padding: 1vh 0; width: 10%;">
+    <img class="footer-logo" src="image/osrInSeoul/osrLogo_Black.png">
   </div>
 
 </body>
